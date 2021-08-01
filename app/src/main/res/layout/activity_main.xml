@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDatosPersonales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Datos Personales" />
+
+    <RelativeLayout
+        android:id="@+id/layoutNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDatosPersonales"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/txtNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombres:"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTxtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombres"
+            android:layout_marginTop="20dp"
+            android:hint="Nombres" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutNombres"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/txtApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellidos:"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTxtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtApellidos"
+            android:layout_marginTop="20dp"
+            android:hint="Apellidos" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutApellidos"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/txtTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono:"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTxtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTelefono"
+            android:layout_marginTop="20dp"
+            android:hint="Telefono/Celular" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTelefono"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico:"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTxtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="20dp"
+            android:hint="mail@ejemplo.com" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutEmail"
+            android:text="ENVIAR" />
+
+        <Button
+            android:id="@+id/btnPaginaPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Pagina Principal" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
